@@ -40,6 +40,31 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
+#authors {
+  img {
+    margin-top: -50px;
+  }
+
+  .card:hover {
+    background: $primary;
+    transition-duration: 0.5s;
+    color: $white;
+    .fab {
+      color: $white;
+    }
+    .text-muted {
+      color: $white !important;
+    }
+  }
+}
+@media (max-width: 992px) {
+  #authors {
+    .card {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   #showcase {
     min-height: 500px;
@@ -51,5 +76,11 @@ body {
 
   .mb-resp {
     margin-bottom: 1rem;
+  }
+
+  #authors {
+    .card {
+      margin-bottom: 4rem;
+    }
   }
 }

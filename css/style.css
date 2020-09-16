@@ -27,6 +27,20 @@ body {
   margin: auto;
   border-bottom: 1px solid #ddd; }
 
+#authors img {
+  margin-top: -50px; }
+#authors .card:hover {
+  background: #3292a6;
+  transition-duration: 0.5s;
+  color: #fff; }
+  #authors .card:hover .fab {
+    color: #fff; }
+  #authors .card:hover .text-muted {
+    color: #fff !important; }
+
+@media (max-width: 992px) {
+  #authors .card {
+    margin-bottom: 4rem; } }
 @media (max-width: 768px) {
   #showcase {
     min-height: 500px; }
@@ -34,4 +48,7 @@ body {
       font-size: 4rem; }
 
   .mb-resp {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+
+  #authors .card {
+    margin-bottom: 4rem; } }
