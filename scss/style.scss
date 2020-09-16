@@ -1,5 +1,6 @@
 $primary: hsl(175, 100%, 12%);
 $primary-overlay: rgba(0, 59, 54, 0.8);
+$secondary: #d06c6c !default;
 
 $white: #fff;
 
@@ -24,7 +25,8 @@ body {
 
 #showcase {
   position: relative;
-  background: url("../img/mountains.jpg");
+  background: url("../img/pexels-cátia-matos-1072179.jpg"); /* Photo by Cátia Matos from Pexels */
+  background-size: cover;
   min-height: 600px;
 
   .primary-overlay {
@@ -37,13 +39,20 @@ body {
   }
 }
 
+.subscribe-btn {
+  background-color: $secondary;
+}
 #info-header {
   width: 50%;
   margin: auto;
   border-bottom: 1px solid #ddd;
   padding-top: 4rem;
 }
-
+#accordion {
+  .card-body {
+    padding: 15px;
+  }
+}
 #authors {
   img {
     margin-top: -50px;
@@ -54,7 +63,7 @@ body {
     }
   }
   .card:hover {
-    background: $primary;
+    background: $secondary;
     transition-duration: 0.5s;
     color: $white;
     .fab {
@@ -66,10 +75,35 @@ body {
   }
 }
 
+#main-footer {
+  ul {
+    list-style: none;
+    li {
+      display: inline;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  a {
+    color: $white;
+  }
+  .fas:hover,
+  .fab:hover {
+    color: $secondary;
+    transition-duration: 0.5s;
+  }
+}
+
 @media (max-width: 992px) {
   #authors {
     .card {
       margin-bottom: 4rem;
+    }
+  }
+
+  #main-footer {
+    .col-md-6 {
+      text-align: center !important;
     }
   }
 }
