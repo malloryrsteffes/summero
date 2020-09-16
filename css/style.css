@@ -61,6 +61,9 @@ body {
     padding-right: 10px; }
 #main-footer a {
   color: #fff; }
+#main-footer a:hover {
+  text-decoration: none;
+  color: #d06c6c; }
 #main-footer .fas:hover,
 #main-footer .fab:hover {
   color: #d06c6c;

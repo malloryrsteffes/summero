@@ -87,6 +87,10 @@ body {
   a {
     color: $white;
   }
+  a:hover {
+    text-decoration: none;
+    color: $secondary;
+  }
   .fas:hover,
   .fab:hover {
     color: $secondary;
